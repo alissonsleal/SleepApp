@@ -11,6 +11,7 @@ import {
 } from './styles';
 
 import { MainText } from '../Home/styles';
+import CategorySlider from '../../components/CategorySlider';
 
 const SoundSelection: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const SoundSelection: React.FC = () => {
           <SearchIcon name="search" size={24} />
           <SearchBar />
         </SearchBarContainer>
+        <CategorySlider categories={['Nature', 'ASMR', 'Others']} />
       </Container>
     </TouchableWithoutFeedback>
   );
