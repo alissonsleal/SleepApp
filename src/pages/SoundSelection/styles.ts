@@ -39,6 +39,7 @@ export const SearchBar = styled(TextInput).attrs({
   maxLength: 20,
   placeholder: 'Search',
   placeholderTextColor: '#a0a0a0',
+  selectionColor: '#27DDF2',
 })`
   flex: 1;
   padding-bottom: 0px;
@@ -46,5 +47,4 @@ export const SearchBar = styled(TextInput).attrs({
   color: #4f4f4f;
   font-size: 18px;
   line-height: 27px;
-  /* text-align: center; */
 `;
