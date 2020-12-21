@@ -1,13 +1,23 @@
 import React from 'react';
 
-import { Text } from 'react-native';
-
-import { Container } from './styles';
+import {
+  Container,
+  BackgroundBall,
+  SearchBarContainer,
+  SearchBar,
+  SearchIcon,
+} from './styles';
+import { MainText } from '../Home/styles';
 
 const SoundSelection: React.FC = () => {
   return (
     <Container>
-      <Text>SoundSelection</Text>
+      <BackgroundBall />
+      <MainText>My Sounds</MainText>
+      <SearchBarContainer>
+        <SearchIcon name="search" size={24} />
+        <SearchBar />
+      </SearchBarContainer>
     </Container>
   );
 };
