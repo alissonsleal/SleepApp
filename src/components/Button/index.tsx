@@ -5,13 +5,15 @@ import Icon from 'react-native-vector-icons/Feather';
 
 import { Container } from './styles';
 
-interface ButtonProps extends TouchableOpacityProps {
+export interface ButtonProps extends TouchableOpacityProps {
   icon: string;
+  center?: boolean;
+  margin?: number;
 }
 
-const Button: React.FC<ButtonProps> = ({ icon, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({ icon, center, margin, ...rest }) => {
   return (
-    <Container {...rest}>
+    <Container center={center} margin={margin} {...rest}>
       <Icon name={icon} size={38} color="#FFFFFF" />
     </Container>
   );
