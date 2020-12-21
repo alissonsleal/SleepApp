@@ -6,8 +6,7 @@ export const Container = styled.ScrollView.attrs({
     justifyContent: 'space-between',
   },
 })`
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
+  max-height: 32px;
   margin-top: 40px;
 `;
 

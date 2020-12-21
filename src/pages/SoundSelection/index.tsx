@@ -12,6 +12,7 @@ import {
 
 import { MainText } from '../Home/styles';
 import CategorySlider from '../../components/CategorySlider';
+import SoundCards from '../../components/SoundCards';
 
 const SoundSelection: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const SoundSelection: React.FC = () => {
           <SearchBar />
         </SearchBarContainer>
         <CategorySlider categories={['Nature', 'ASMR', 'Others']} />
+        <SoundCards />
       </Container>
     </TouchableWithoutFeedback>
   );
