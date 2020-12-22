@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { useSound } from '../../context/ActiveSounds';
+
 import {
   Container,
   UpperCardContainer,
@@ -15,24 +17,48 @@ import rainImage from '../../../assets/images/raining.png';
 import outsideImage from '../../../assets/images/outside.png';
 
 const SoundCards: React.FC = () => {
+  const { windActive, setWindActive } = useSound();
+  const { campfireActive, setCampfireActive } = useSound();
+  const { rainActive, setRainActive } = useSound();
+  const { birdsActive, setBirdsActive } = useSound();
+
+  const handleWind = () => {
+    setWindActive(!windActive);
+  };
+
+  const handleCampfire = () => {
+    setCampfireActive(!campfireActive);
+  };
+
+  const handleRain = () => {
+    setRainActive(!rainActive);
+  };
+
+  const handleBirds = () => {
+    setBirdsActive(!birdsActive);
+  };
+
   return (
     <Container>
       <UpperCardContainer>
-        <CardContainer>
+        <CardContainer isActive={windActive} onPress={handleWind}>
           <ThumbnailImage source={windImage} />
           <ThumbnailText>Wind</ThumbnailText>
         </CardContainer>
-        <CardContainer>
+
+        <CardContainer isActive={campfireActive} onPress={handleCampfire}>
           <ThumbnailImage source={campfireImage} />
           <ThumbnailText>Campfire</ThumbnailText>
         </CardContainer>
       </UpperCardContainer>
+
       <LowerCardContainer>
-        <CardContainer>
+        <CardContainer isActive={rainActive} onPress={handleRain}>
           <ThumbnailImage source={rainImage} />
           <ThumbnailText>Rain</ThumbnailText>
         </CardContainer>
-        <CardContainer>
+
+        <CardContainer isActive={birdsActive} onPress={handleBirds}>
           <ThumbnailImage source={outsideImage} />
           <ThumbnailText>Birds</ThumbnailText>
         </CardContainer>
