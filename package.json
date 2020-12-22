@@ -20,6 +20,7 @@
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
     "react-native-screens": "^2.16.1",
+    "react-native-track-player": "^2.0.0-rc13",
     "react-native-vector-icons": "^7.1.0",
     "styled-components": "^5.2.1"
   },

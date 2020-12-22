@@ -27,7 +27,7 @@ const SoundSelection: React.FC = () => {
         </SearchBarContainer>
         <CategorySlider categories={['Nature', 'ASMR', 'Others']} />
         <SoundCards />
-        <Button icon={'play-circle'} center margin={32} />
+        <Button icon={'play-circle'} center margin={32} size={54} />
       </Container>
     </TouchableWithoutFeedback>
   );

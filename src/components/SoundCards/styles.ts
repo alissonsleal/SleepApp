@@ -23,7 +23,7 @@ export const LowerCardContainer = styled.View`
   justify-content: space-between;
 `;
 
-export const CardContainer = styled.TouchableOpacity<CardContainerProps>`
+export const CardContainer = styled.Pressable<CardContainerProps>`
   width: 144px;
   height: 144px;
   background-color: #27ddf2;
