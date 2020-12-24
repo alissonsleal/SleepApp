@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 
 import { ButtonProps } from './index';
 
-export const Container = styled.Pressable<ButtonProps>`
+export const Container = styled.TouchableOpacity<ButtonProps>`
   height: 64px;
   width: 64px;
   background-color: #27ddf2;

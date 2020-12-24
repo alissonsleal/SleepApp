@@ -41,22 +41,38 @@ const SoundCards: React.FC = () => {
   const { birdsActive, setBirdsActive } = useSound();
 
   const handleWind = useCallback(() => {
+    // !TrackPlayer.pause();
     setWindActive(!windActive);
+    [setCampfireActive, setRainActive, setBirdsActive].forEach((value) => {
+      value(false);
+    });
     togglePlayback(windTrack);
   }, [windActive]);
 
   const handleCampfire = useCallback(() => {
+    // !TrackPlayer.pause();
     setCampfireActive(!campfireActive);
+    [setWindActive, setRainActive, setBirdsActive].forEach((value) => {
+      value(false);
+    });
     togglePlayback(campfireTrack);
   }, [campfireActive]);
 
   const handleRain = useCallback(() => {
+    // !TrackPlayer.pause();
     setRainActive(!rainActive);
+    [setWindActive, setCampfireActive, setBirdsActive].forEach((value) => {
+      value(false);
+    });
     togglePlayback(rainTrack);
   }, [rainActive]);
 
   const handleBirds = useCallback(() => {
+    // !TrackPlayer.pause();
     setBirdsActive(!birdsActive);
+    [setWindActive, setCampfireActive, setRainActive].forEach((value) => {
+      value(false);
+    });
     togglePlayback(birdsTrack);
   }, [birdsActive]);
 
@@ -72,9 +88,10 @@ const SoundCards: React.FC = () => {
 
   async function togglePlayback(soundTrack: any) {
     const currentTrack = await TrackPlayer.getCurrentTrack();
-    console.log(currentTrack);
+    console.log(currentTrack, soundTrack.id);
+
     await TrackPlayer.reset();
-    if (currentTrack == null) {
+    if (currentTrack !== soundTrack.id) {
       await TrackPlayer.reset();
       await TrackPlayer.add(soundTrack);
 
@@ -85,6 +102,10 @@ const SoundCards: React.FC = () => {
       } else {
         await TrackPlayer.pause();
       }
+    }
+
+    if (!windActive || !campfireActive || !rainActive || !birdsActive) {
+      await TrackPlayer.pause();
     }
   }
 

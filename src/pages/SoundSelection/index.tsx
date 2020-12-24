@@ -15,7 +15,16 @@ import CategorySlider from '../../components/CategorySlider';
 import SoundCards from '../../components/SoundCards';
 import Button from '../../components/Button';
 
+import { useSound } from '../../context/ActiveSounds';
+
 const SoundSelection: React.FC = () => {
+  const {
+    setWindActive,
+    setCampfireActive,
+    setRainActive,
+    setBirdsActive,
+  } = useSound();
+
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Container>
@@ -27,7 +36,22 @@ const SoundSelection: React.FC = () => {
         </SearchBarContainer>
         <CategorySlider categories={['Nature', 'ASMR', 'Others']} />
         <SoundCards />
-        <Button icon={'settings'} center margin={32} size={38} />
+        <Button icon={'settings'} margin={32} />
+        <Button
+          icon={'pause'}
+          center
+          margin={-62}
+          onPress={() => {
+            [
+              setWindActive,
+              setCampfireActive,
+              setRainActive,
+              setBirdsActive,
+            ].forEach((active) => {
+              active(false);
+            });
+          }}
+        />
       </Container>
     </TouchableWithoutFeedback>
   );
