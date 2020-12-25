@@ -37,7 +37,7 @@ export const rainTrack = {
 export const birdsTrack = {
   id: '4444',
   url: birdsSound,
-  title: 'Rain',
+  title: 'Birds',
   artist: 'Sleep',
   artwork: birdsImage,
 };

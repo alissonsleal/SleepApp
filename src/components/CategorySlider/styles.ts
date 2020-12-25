@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView.attrs({
   horizontal: true,
+  showsHorizontalScrollIndicator: false,
   contentContainerStyle: {
     justifyContent: 'space-between',
   },
@@ -27,4 +28,8 @@ export const Text = styled.Text`
   line-height: 27px;
   max-width: 80px;
   max-height: 26px;
+`;
+
+export const ActiveContainer = styled(CategoryContainer)`
+  background-color: rgba(39, 221, 242, 1);
 `;

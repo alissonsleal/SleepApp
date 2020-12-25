@@ -104,9 +104,9 @@ const SoundCards: React.FC = () => {
       }
     }
 
-    if (!windActive || !campfireActive || !rainActive || !birdsActive) {
-      await TrackPlayer.pause();
-    }
+    // if (!windActive || !campfireActive || !rainActive || !birdsActive) {
+    //   await TrackPlayer.pause();
+    // }
   }
 
   return (

@@ -48,3 +48,12 @@ export const SearchBar = styled(TextInput).attrs({
   font-size: 18px;
   line-height: 27px;
 `;
+
+export const ButtonView = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const EmptyView = styled.View`
+  width: 64px;
+`;
