@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <UpperContainer>
-        <MainText>Welcome Jane</MainText>
+        <MainText>Welcome to sleep</MainText>
         <SecondaryText>A better way to sleep is here for you</SecondaryText>
       </UpperContainer>
 
