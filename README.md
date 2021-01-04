@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/Alissonsleal/sleep/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Alissonsleal/sleep?color=sucess&style=flat-square"></a>
-    <a href="https://github.com/Alissonsleal/sleep/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Alissonsleal/sleep?color=sucess&style=flat-square"></a>
-    <a href="https://github.com/Alissonsleal/sleep/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Alissonsleal/sleep?color=sucess&style=flat-square"></a>
-    <a href="https://github.com/Alissonsleal/sleep/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Alissonsleal/sleep?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/SleepApp/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Alissonsleal/SleepApp?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/SleepApp/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Alissonsleal/SleepApp?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/SleepApp/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Alissonsleal/SleepApp?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/SleepApp/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Alissonsleal/SleepApp?color=sucess&style=flat-square"></a>
     <a href="https://github.com/Alissonsleal/"><img alt="Alisson Leal GitHub Profile" src="https://img.shields.io/badge/made%20by-Alisson%20Leal-sucess?style=flat-square&logo=appveyor"></a>
 </p>
 
