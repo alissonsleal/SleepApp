@@ -1,5 +1,5 @@
 <p align="center">
-  <img  max-width="1024" src="https://i.imgur.com/Hjfu4cd.png">
+  <img  width="1024" src="https://i.imgur.com/Hjfu4cd.png">
 </p>
 
 <p align="center">
@@ -21,21 +21,21 @@ Sleep is an Android app to help you fall asleep to nature sounds. It works in ba
 ### Initial Screen
 
   <p align="center">
-    <img  max-width="512" src="https://i.imgur.com/N9xGDmr.png">
+    <img  width="256" src="https://i.imgur.com/N9xGDmr.png">
   </p>
 <br />
 
 ### Sound Screen
 
   <p align="center">
-    <img  max-width="512" src="https://i.imgur.com/DRVkY0L.png">
+    <img  width="256" src="https://i.imgur.com/DRVkY0L.png">
   </p>
 <br />
 
 ### Background Mode
 
   <p align="center">
-    <img  max-width="512" src="https://i.imgur.com/DyFd2rQ.png">
+    <img  width="256" src="https://i.imgur.com/DyFd2rQ.png">
   </p>
 <br />
 
@@ -64,5 +64,5 @@ All of the sounds are licensed under Creative Commons Attribution license and re
 [Go to the top 🚀](#sleep)
 
 <p align="center">
-  <img  max-width="128" src="assets/logo/Logo.svg">
+  <img  width="128" src="assets/logo/Logo.svg">
 </p>
