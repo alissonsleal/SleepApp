@@ -88,7 +88,7 @@ const SoundCards: React.FC = () => {
 
   async function togglePlayback(soundTrack: any) {
     const currentTrack = await TrackPlayer.getCurrentTrack();
-    console.log(currentTrack, soundTrack.id);
+    // console.log(currentTrack, soundTrack.id);
 
     await TrackPlayer.reset();
     if (currentTrack !== soundTrack.id) {
